@@ -50,5 +50,6 @@ describe 'node::default' do
     it 'should delete the symlink from the default config in sites-enabled' do
       expect(chef_run).to delete_link '/etc/nginx/sites-enabled/default'
     end
+    
   end
 end
